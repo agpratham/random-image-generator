@@ -1,7 +1,4 @@
-<html>
-    <head>
-        <style>
-            body {
+body {
                 display: flex;
                 flex-direction: column;
                 justify-content: space-evenly;
@@ -120,27 +117,3 @@
         top: 0;
         border-radius: 10px;
         }
-            
-        </style>
-        <script>
-            var i=1;
-            function changeImg() {
-                if (i==10) {
-                    i=1;
-                }
-                else {
-                    i+=1;
-                }
-                var file_name = "./img_"+i.toString()+".jpg";
-                document.getElementById("display").setAttribute("src",file_name);
-            }
-        </script>
-    </head>
-    <body>
-        <header>
-            RANDOM IMAGE GENERATOR
-        </header>
-        <img src="./img_1.jpg" id="display"></img>
-        <div id="button" onclick="changeImg()">CHANGE</div>
-    </body>
-</html>
